@@ -7,6 +7,11 @@ and open the template in the editor.
 <html>
     <head>
         <style>
+            
+            body{
+                width: 82%;
+                margin-left: 5%;
+            }
             div.layout{
                 position: absolute;
                 height:20px;
@@ -31,21 +36,34 @@ and open the template in the editor.
                 border-top: 1px solid grey;
             }
             
+            .marquee:hover {
+                -webkit-animation-play-state: paused; 
+                animation-play-state: paused; 
+                -moz-animation-play-state: paused;
+            }
+            
+            span:hover{
+                text-decoration: underline;
+                cursor: pointer;
+                cursor: hand;
+
+            }
             img{
                 padding-left: 20px;
                 padding-right: 20px;
             }
-             /* Make it move: Opera, Chrome, Safari */
+
             @-webkit-keyframes marquee {
                 0%   { text-indent: 27.5em }
                 100% { text-indent: -105em }
             }
             
-            /* Make it move: Firefox, IE */
+
             @keyframes marquee {
                 0%   { text-indent: 27.5em }
                 100% { text-indent: -105em }
             }            
+            
             
         </style>
         <title>News Assignment</title>
@@ -54,16 +72,20 @@ and open the template in the editor.
     </head>
     <body>
         <div class="layout">Latest</div>
-        <div class="marquee">LeBron sets tone at Cavs media day
+        <div class="marquee"> 
+            <span>LeBron sets tone at Cavs media day</span>
             <img src="images/NBA.jpg" height="20" width="15">
-            Rajon Rondo breaks hand in fall
+            <span>Rajon Rondo breaks hand in fall</span>
             <img src="images/NBA.jpg" height="20" width="15">
-            LeBron: Patience is key for Cavs
+            <span>LeBron: Patience is key for Cavs</span>
             <img src="images/NBA.jpg" height="20" width="15">
-            Jackson: Knicks can make playoffs
+            <span>Jackson: Knicks can make playoffs</span>
             <img src="images/NBA.jpg" height="20" width="15">
-            Grizzlies sign F Michael Beasley
+            <span>Grizzlies sign F Michael Beasley</span>
         </div>
 
+        <div class="news">
+            
+        </div>
     </body>
 </html>
