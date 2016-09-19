@@ -8,20 +8,62 @@ and open the template in the editor.
     <head>
         <style>
             div.layout{
+                position: absolute;
                 height:20px;
-                background-color: blue;
+                background-color: darkblue;
                 color: white;
                 text-align: center;
                 font-size: 18px;
+                padding: 6px;
+
             }
+            
+            div.marquee{
+                height: 20px;
+                padding: 5px;
+                overflow: hidden;
+                white-space: nowrap;
+                -webkit-animation: marquee 50s linear infinite;
+                animation: marquee 50s linear infinite; 
+                -moz-animation: marquee 50s linear infinite;
+                font-size: 18px;
+                border-bottom: 1px solid grey;
+                border-top: 1px solid grey;
+            }
+            
+            img{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+             /* Make it move: Opera, Chrome, Safari */
+            @-webkit-keyframes marquee {
+                0%   { text-indent: 27.5em }
+                100% { text-indent: -105em }
+            }
+            
+            /* Make it move: Firefox, IE */
+            @keyframes marquee {
+                0%   { text-indent: 27.5em }
+                100% { text-indent: -105em }
+            }            
+            
         </style>
         <title>News Assignment</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div class="layout">Layout</div>
-        <div class="marquee">TODO write content</div>
+        <div class="layout">Latest</div>
+        <div class="marquee">LeBron sets tone at Cavs media day
+            <img src="images/NBA.jpg" height="20" width="15">
+            Rajon Rondo breaks hand in fall
+            <img src="images/NBA.jpg" height="20" width="15">
+            LeBron: Patience is key for Cavs
+            <img src="images/NBA.jpg" height="20" width="15">
+            Jackson: Knicks can make playoffs
+            <img src="images/NBA.jpg" height="20" width="15">
+            Grizzlies sign F Michael Beasley
+        </div>
 
     </body>
 </html>
