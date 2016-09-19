@@ -7,13 +7,21 @@ and open the template in the editor.
 <html>
     <head>
         <style>
-            
+            div.layout{
+                height:20px;
+                background-color: blue;
+                color: white;
+                text-align: center;
+                font-size: 18px;
+            }
         </style>
         <title>News Assignment</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <div class="layout">Layout</div>
+        <div class="marquee">TODO write content</div>
+
     </body>
 </html>
