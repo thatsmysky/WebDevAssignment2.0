@@ -1,0 +1,84 @@
+body{
+    width: 82%;
+    margin-left: 5%;
+}
+div.layout{
+    position: absolute;
+    height:20px;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 6px;
+
+}
+
+div.marquee{
+    height: 20px;
+    padding: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-animation: marquee 50s linear infinite;
+    animation: marquee 50s linear infinite; 
+    -moz-animation: marquee 50s linear infinite;
+    font-size: 18px;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+}
+
+.marquee:hover {
+    -webkit-animation-play-state: paused; 
+    animation-play-state: paused; 
+    -moz-animation-play-state: paused;
+}
+
+span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    cursor: hand;
+
+}
+img{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@-webkit-keyframes marquee {
+    0%   { text-indent: 27.5em }
+    100% { text-indent: -105em }
+}
+
+
+@keyframes marquee {
+    0%   { text-indent: 27.5em }
+    100% { text-indent: -105em }
+}   
+
+div h3 {
+    font-size: 18px;
+    padding: 15px 0px 0px 10px;
+}
+
+#date {
+    font-size: 13px;
+    color: gray;
+    padding:20px 0px 20px 10px;
+}
+
+.news {
+    background-color: lightgray;
+    overflow: auto;
+} 
+
+.news p {
+    font-size: 17px;
+    line-height: 1.4;
+    padding-left: 10px;
+}
+
+#LeBronPic {
+    height: 200px;
+    width: 200px;
+    padding: 10px 10px 0px 0px;
+    float: right;
+}
