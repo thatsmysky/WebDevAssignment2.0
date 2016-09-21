@@ -66,8 +66,10 @@ div h3 {
 }
 
 .news {
-    background-color: lightgray;
+    background-color: lightgrey;
     overflow: auto;
+    border-radius: 6px;
+    border: 1px solid grey;
 } 
 
 .news p {
@@ -77,9 +79,11 @@ div h3 {
 }
 
 #LeBronPic {
-    posiion: relatie;
+    position: relative;
     height: 200px;
     width: 200px;
     padding: 10px 10px 0px 0px;
     float: right;
+    background-color: white;
+    border: 1px solid red;
 }
