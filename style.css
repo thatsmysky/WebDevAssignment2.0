@@ -78,12 +78,44 @@ div h3 {
     padding-left: 10px;
 }
 
-#LeBronPic {
+.LeBronPic img{
     position: relative;
     height: 200px;
     width: 200px;
-    padding: 10px 10px 0px 0px;
+    margin: 10px 2px 0px 10px;
+    padding: 2px;
     float: right;
     background-color: white;
-    border: 1px solid red;
+    border: 1px solid grey;
+    opacity:1;
+}
+
+.LeBronPic:hover{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.description{
+    position:absolute;
+    left:626px;
+    top:204px;
+    float: right;
+    height:50px;
+    line-height: 50px;
+    width:200px;
+    color:white;
+    background-color: grey;
+    text-align: center;
+    opacity:0;
+    transition: 1s;
+     -webkit-transition: 1s; 
+     -moz-transition: 1s;
+     -o-transition:1s;
+
+}
+
+    
+.LeBronPic:hover .description{
+    opacity:1;
+
 }
